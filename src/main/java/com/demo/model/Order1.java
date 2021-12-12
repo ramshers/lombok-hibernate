@@ -18,7 +18,7 @@ public class Order1 {
  
     private String customer;
  
-    @OneToMany//(mappedBy = "order", cascade=CascadeType.ALL)
+    @OneToMany(mappedBy = "order") //, cascade=CascadeType.ALL)
     private Set<OrderPosition> positions = new HashSet<>();
  
     public Long getId() {
