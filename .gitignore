@@ -1,8 +1,15 @@
 HELP.md
-target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+### delombok ###
+####!target\
+target/classes/**
+target\generated-test-sources\**
+target\test-classes\**
+target\generated-sources\annotations\**
+!target\generated-sources\delombok
 
 ### STS ###
 .apt_generated
@@ -59,3 +66,5 @@ hs_err_pid*
 ### mvn ###
 .mvn/
 mvn**
+
+
